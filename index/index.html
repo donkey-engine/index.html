@@ -8,7 +8,6 @@
     <meta name="yandex-verification" content="94a36c55f5b724b0" />
     <title>Donkey Engine. Сборщик и хостинг игровых серверов в Minecraft</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css" />
-
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript" >
       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -24,81 +23,242 @@
     </script>
     <noscript><div><img src="https://mc.yandex.ru/watch/79181092" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
+    <script data-ad-client="ca-pub-5441199714407770" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/92d79212af.js" crossorigin="anonymous"></script>
+
+    <style>
+      body {
+        font-family: 'Play', sans-serif;
+      }
+
+      hr {
+        border: none;
+        color: #261447;
+        background-color: #261447;
+        height: 10px;
+        margin: 0;
+      }
+
+      #about-section {
+        background-image: url('https://donkey-engine.host/static/index.html/index/images/bigwave.png');
+        background-position-x: left;
+        background-position-y: bottom;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-color: #ff3864
+      }
+
+      #about-section .feature-item {
+        background-image: url('https://donkey-engine.host/static/index.html/index/images/glitch.gif');
+        background-color: #0d0221;
+        background-position: center;
+        border-radius: 15px;
+        margin: 1rem;
+      }
+
+      #games {
+        background-color: #58a8a9;
+        background-image: url('https://donkey-engine.host/static/index.html/index/images/gameboy.gif');
+        background-position-x: right;
+        background-position-y: bottom;
+        background-repeat: no-repeat;
+      }
+
+      #games .icon-block img {
+        max-width: 64px;
+        max-height: 64px;
+      }
+      #games .icon-block p {
+        color: #000;
+      }
+      #games .icon-block p.selected {
+        border: 1px dotted #000;
+      }
+
+      #games .windows98 {
+        background-color: #fff;
+        border: 2px groove #c6d4d4;
+      }
+      #games .window-title {
+        background-color: #0000a7;
+        background-image: url('https://donkey-engine.host/static/index.html/index/images/web.gif');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+      #games .window-title-close {
+        color: #b8c3b5;
+        font-size: 1.4em;
+      }
+
+      #join-button {
+        color: #fff;
+        background: transparent !important;
+        font-family: 'Press Start 2P', cursive;
+        border: transparent;
+        -webkit-animation: blink 1.0s linear infinite;
+        animation: blink 1.0s linear infinite;
+      }
+
+      #header-section {
+        background-image: url('https://donkey-engine.host/static/index.html/index/images/retrowave.gif');
+        background-size: cover;
+        background-position: center;
+      }
+      #header-section .title.is-1 {
+        font-size: 4em;
+        font-weight: bold;
+        color: #2de2e6 !important;
+        background: url('https://donkey-engine.host/static/index.html/index/images/glitch2.gif') no-repeat center center;
+        background-size: cover;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+      }
+
+      .navbar-menu {
+        background-color: #0d0221;
+      }
+      .navbar{
+        background-color: #0d0221;
+        border-bottom: 4px groove #ff3864;
+      }
+      .navbar a {
+        color: #ff6c11;
+      }
+      .navbar a:hover {
+        background-color: #261447;
+        color: #ff6c11;
+      }
+      .navbar .button.signup {
+        background-color: #ff3864;
+        border: none;
+        color: #0d0221;
+      }
+      .navbar .button.login {
+        background-color: #261447;
+        border: none;
+        color: #ff3864;
+      }
+
+      @-webkit-keyframes blink {
+        50% { color: rgb(34, 34, 34); }
+        51% { color: rgba(34, 34, 34, 0); }
+        100% { color: rgba(34, 34, 34, 0); }
+      }
+
+      @keyframes blink {
+        50% { color: rgb(34, 34, 34); }
+        51% { color: rgba(34, 34, 34, 0); }
+        100% { color: rgba(34, 34, 34, 0); }
+      }
+    </style>
   </head>
   <body>
 
-    <section class="hero is-primary is-medium">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#header-section">Donkey Engine</a>
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="true" data-target="navbar"></a>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="navbar" class="navbar-menu is-active">
+        <div class="navbar-start">
+          <a class="navbar-item" href="#about-section">
+            Возможности
+          </a>
+          <a class="navbar-item" href="#games">
+            Игры
+          </a>
+        </div>
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button signup" href="/signup">
+                <strong>Регистрация</strong>
+              </a>
+              <a class="button login" href="/login">
+                Вход
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="header-section" class="hero is-black is-medium has-text-centered">
       <div class="hero-body">
-        <h1 class="title is-1">Donkey Engine</h1>
-        <h2 class="title">
+        <h1 class="title is-1">DONKEY ENGINE</h1>
+        <h2 class="subtitle is-3">
           Сборщик и хостинг серверов Minecraft!
         </h2>
-        <p class="subtitle">Создать свой сервер просто. Всего в три клика!</p>
-        <a href="/signup" class="button is-large is-link">Войти</a>
+        <p class="subtitle is-5">Создать свой сервер просто. Всего в три клика!</p>
+        <a href="/signup" id="join-button" class="button is-large" id="blink">-> Войти <-</a>
       </div>
     </section>
 
-    <section class="hero">
+    <hr />
+
+    <section id="about-section" class="hero is-black is-medium">
       <div class="hero-body">
-        <p class="title white">Тарифы:</p>
-        <div class="columns is-variable is-5 is-centered">
-          <div class="column">
-            <div class="notification is-dark">
-              <p class="title">Бесплатный сервер</p>
-              <ul>
-                <li>Автоматизированная сборка и хостинг сервера разных версий</li>
-                <li>Простое добавление модов на сервер из каталога всего в один клик</li>
-                <li>3 слота для игроков</li>
-                <li>Поддержка по всем вопросам по <a href="mailto:support@donkey-engine.host"><u>электронной почте</u></a></li>
-                <li><hr /><i>Мы это разрабатываем прямо сейчас. Этот функционал будет доступен на сайте в ближайшее время</i></li>
-                <li>Перенос сервера на новую версию</li>
-                <li>Выбор карты из каталога. Можно будет пройти интересную карту с друзьями</li>
-              </ul>
-            </div>
-          </div>
-          <div class="column">
-            <div class="notification is-dark">
-              <p class="title">Премиум сервер <i>В разработке</i></p>
-              <p class="subtitle">300руб в месяц</p>
-              <ul>
-                <li><i>Все опции, которые входят в бесплатный тариф +</i></li>
-                <li>50 слотов для игроков</li>
-                <li>Сервер не останавливается, если на нем нет игроков</li>
-                <li>Создание бекапов</li>
-              </ul>
+        <div class="title is-1">Возможности</div>
+        <div class="columns">
+          <div class="column has-text-centered"></div>
+          <div class="column has-text-centered">
+
+            <div class="columns is-multiline">
+              <div class="column feature-item is-5">
+                <p class="title">Никаких ручных сборок</p>
+                <p class="subtitle">Система сама соберет и запустит игровой сервер за считанные секунды. От Вас требуется только выбрать игру и плагины в меню.</p>
+              </div>
+              <div class="column feature-item is-5">
+                <p class="title">БЕСПЛАТНО</p>
+                <p class="subtitle">Маленькие сервера для игры с друзьями абсолютно бесплатны. Если вы хотите развернуть у нас большой сервер, то посмотрите на наши тарифы. Это не дорого!</p>
+              </div>
+              <div class="column feature-item is-5">
+                <p class="title">Улучшения</p>
+                <p class="subtitle">Мы постоянно работаем над новым функционалом и улучшением производительности сайта.</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="hero is-info">
+    <hr />
+
+    <section id="games" class="hero is-black is-medium">
       <div class="hero-body">
-        <p class="title">Как это использовать:</p>
-        <div class="columns is-centered">
-          <div class="column">
-            <p class="title">1. Зарегистрируйся</p>
-            <p class="subtitle"><a href="/signup">Нажми сюда</a></p>
+        <div class="title is-1">Мы поддерживаем:</div>
+        <div class="columns">
+          <div class="column has-text-centered windows98">
+            <div class="columns is-mobile window-title">
+              <div class="column has-text-left is-11"></div>
+              <div class="column has-text-right is-1 window-title-close"><i class="fas fa-window-close"></i></div>
+            </div>
+            <div class="columns">
+              <div class="column has-text-centered icon-block">
+                <img src="https://donkey-engine.host/static/index.html/index/images/minecraft.png" />
+                <p class="selected">Minecraft: Java Edition</p>
+              </div>
+              <div class="column has-text-centered icon-block">
+                <img src="https://donkey-engine.host/static/index.html/index/images/bukkit.gif" />
+                <p>Craftbukkit</p>
+              </div>
+              <div class="column has-text-centered icon-block">
+                <img src="https://donkey-engine.host/static/index.html/index/images/spigot.gif" />
+                <p>Spigot</p>
+              </div>
+            </div>
           </div>
-          <div class="column">
-            <p class="title">2. Выбери версию и плагины</p>
-            <p class="subtitle">Через меню на сайте</p>
-          </div>
-          <div class="column">
-            <p class="title">3. Запусти его</p>
-            <p class="subtitle">Получай удовольствие</p>
-          </div>
+          <div class="column has-text-centered"></div>
         </div>
       </div>
     </section>
-
-    <footer class="footer">
-      <div class="content has-text-centered">
-        <p>
-          <strong>Donkey Engine</strong>
-        </p>
-      </div>
-    </footer>
 
   </body>
 </html>
